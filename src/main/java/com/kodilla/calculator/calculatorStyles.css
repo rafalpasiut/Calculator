@@ -1,0 +1,36 @@
+.calculator {
+    background-color: #d8c8a6;
+    width: 410px;
+    margin: 0 auto;
+    overflow: auto;
+    font-size: 50px;
+}
+
+.display {
+    background-color: #e0d8c7;
+    padding: 1px;
+    margin: 1px;
+    height: auto;
+    font-size: 70px;
+    text-align: right;
+}
+
+.button{
+    background-color: #e5be6b;
+    padding: 1px;
+    margin: 1px;
+    border: 1px;
+    height: 60px;
+    float: left;
+    width: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.button:hover{
+    background-color: #e0a321;
+}
+
+.ButtonRow{
+    overflow: auto;
+}
