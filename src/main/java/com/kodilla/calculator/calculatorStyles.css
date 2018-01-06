@@ -7,7 +7,7 @@
 }
 
 .display {
-    background-color: #e0d8c7;
+    background-color: #a1beed;
     padding: 1px;
     margin: 1px;
     height: auto;
@@ -16,7 +16,7 @@
 }
 
 .button {
-    background-color: #e5be6b;
+    background-color: #7594c6;
     padding: 1px;
     margin: 1px;
     border: 1px;
@@ -28,7 +28,7 @@
 }
 
 .button:hover {
-    background-color: #e0a321;
+    background-color: #526b93;
 }
 
 .ButtonRow {
