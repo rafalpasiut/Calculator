@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="calculatorStyles.css">
-    <script type="text/javascript" src="jquery-1.8.3.js"></script>
-    <script src="calculator.js"></script>
+    <script type="text/javascript" src="calculator.js"></script>
 </head>
 <body>
 <div class="calculator">
     <div id="display" class="display" contenteditable="true">
-        Display
+
     </div>
     <div class="ButtonRow">
         <button class="button">
@@ -27,58 +26,58 @@
         </button>
     </div>
     <div class="ButtonRow">
-        <button class="button">
-            CE
-        </button>
-        <button class="button">
+        <button class="button" onclick = clearDisplay()>
             C
         </button>
         <button class="button">
-            &#8592
+            M+
         </button>
         <button class="button">
+            Ans
+        </button>
+        <button class="button" onclick=addToDisplay("/")>
             &#247
         </button>
     </div>
     <div class="ButtonRow">
-        <button class="button">
+        <button class="button" onclick=addToDisplay(textContent)>
             7
         </button>
-        <button class="button">
+        <button class="button" onclick=addToDisplay(textContent)>
             8
         </button>
-        <button class="button">
+        <button class="button" onclick=addToDisplay(textContent)>
             9
         </button>
-        <button class="button">
+        <button class="button" onclick=addToDisplay("*")>
             &#215
         </button>
     </div>
     <div class="ButtonRow">
-        <button class="button">
+        <button class="button" onclick=addToDisplay(textContent)>
             4
         </button>
-        <button class="button">
+        <button class="button" onclick=addToDisplay(textContent)>
             5
         </button>
-        <button class="button">
+        <button class="button" onclick=addToDisplay(textContent)>
             6
         </button>
-        <button class="button">
+        <button class="button" onclick=addToDisplay("-")>
             &#8722;
         </button>
     </div>
     <div class="ButtonRow">
-        <button class="button">
+        <button class="button" onclick=addToDisplay(textContent)>
             1
         </button>
-        <button class="button">
+        <button class="button" onclick=addToDisplay(textContent)>
             2
         </button>
-        <button class="button">
+        <button class="button" onclick=addToDisplay(textContent)>
             3
         </button>
-        <button class="button">
+        <button class="button" onclick=addToDisplay(textContent)>
             +
         </button>
     </div>
@@ -86,10 +85,10 @@
         <button class="button">
             &#177
         </button>
-        <button class="button">
+        <button class="button" onclick=addToDisplay(textContent)>
             0
         </button>
-        <button class="button">
+        <button class="button" onclick=addToDisplay(textContent)>
             .
         </button>
         <button class="button" onclick="calculate()">
