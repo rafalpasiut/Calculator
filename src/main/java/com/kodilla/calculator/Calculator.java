@@ -1,7 +1,6 @@
 package com.kodilla.calculator;
 
 import com.kodilla.calculator.exception.CalculateEquationException;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.script.ScriptEngine;
@@ -19,6 +18,7 @@ public class Calculator {
         ScriptEngineManager mgr = new ScriptEngineManager();
         ScriptEngine engine = mgr.getEngineByName("JavaScript");
         try {
+            equation = equation.replaceAll("--","+");
             String result = engine.eval(equation).toString();
             return Double.parseDouble(result);
         } catch (ScriptException e) {

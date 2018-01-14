@@ -15,83 +15,83 @@
 
     </div>
     <div class="ButtonRow">
-        <button class="button">
-            %
-        </button>
-        <button class="button">
-            &#8730
-        </button>
-        <button class="button">
-            x<sup style="font-size: 20px">2</sup>
-        </button>
-        <button class="button">
-            1/x
-        </button>
-    </div>
-    <div class="ButtonRow">
         <button class="button" onclick = clearDisplay()>
             C
         </button>
-        <button class="button">
+        <button class="button" onclick="addToMemory()">
             M+
         </button>
-        <button class="button">
+        <button class="button" onclick="addMemoryToQeuation()">
+            M
+        </button>
+        <button class="button" onclick="addAnsToQeuation()">
             Ans
         </button>
-        <button class="button" onclick=addToDisplay("/")>
+    </div>
+    <div class="ButtonRow">
+        <button class="button" onclick="calculateOneOperation(calculateDivide1)">
+            1/x
+        </button>
+        <button class="button" onclick="calculateOneOperation(calculateSqrt)">
+            &#8730
+        </button>
+        <button class="button" onclick="calculateOneOperation(calculateSquarePower)">
+            x<sup style="font-size: 20px">2</sup>
+        </button>
+        <button class="button" onclick=addToEquationDisplay("/")>
             &#247
         </button>
     </div>
     <div class="ButtonRow">
-        <button class="button" onclick=addToDisplay(textContent)>
+        <button class="button" onclick=addToEquationDisplay(textContent)>
             7
         </button>
-        <button class="button" onclick=addToDisplay(textContent)>
+        <button class="button" onclick=addToEquationDisplay(textContent)>
             8
         </button>
-        <button class="button" onclick=addToDisplay(textContent)>
+        <button class="button" onclick=addToEquationDisplay(textContent)>
             9
         </button>
-        <button class="button" onclick=addToDisplay("*")>
+        <button class="button" onclick=addToEquationDisplay("*")>
             &#215
         </button>
     </div>
     <div class="ButtonRow">
-        <button class="button" onclick=addToDisplay(textContent)>
+        <button class="button" onclick=addToEquationDisplay(textContent)>
             4
         </button>
-        <button class="button" onclick=addToDisplay(textContent)>
+        <button class="button" onclick=addToEquationDisplay(textContent)>
             5
         </button>
-        <button class="button" onclick=addToDisplay(textContent)>
+        <button class="button" onclick=addToEquationDisplay(textContent)>
             6
         </button>
-        <button class="button" onclick=addToDisplay("-")>
+        <button class="button" onclick=addToEquationDisplay("-")>
             &#8722;
         </button>
     </div>
     <div class="ButtonRow">
-        <button class="button" onclick=addToDisplay(textContent)>
+        <button class="button" onclick=addToEquationDisplay(textContent)>
             1
         </button>
-        <button class="button" onclick=addToDisplay(textContent)>
+        <button class="button" onclick=addToEquationDisplay(textContent)>
             2
         </button>
-        <button class="button" onclick=addToDisplay(textContent)>
+        <button class="button" onclick=addToEquationDisplay(textContent)>
             3
         </button>
-        <button class="button" onclick=addToDisplay(textContent)>
+        <button class="button" onclick=addToEquationDisplay(textContent)>
             +
         </button>
     </div>
     <div class="ButtonRow">
-        <button class="button">
+        <button class="button" onclick="negate()">
             &#177
         </button>
-        <button class="button" onclick=addToDisplay(textContent)>
+        <button class="button" onclick=addToEquationDisplay(textContent)>
             0
         </button>
-        <button class="button" onclick=addToDisplay(textContent)>
+        <button class="button" onclick=addToEquationDisplay(textContent)>
             .
         </button>
         <button class="button" onclick="calculate()">
